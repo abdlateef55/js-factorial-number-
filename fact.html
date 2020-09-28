@@ -1,0 +1,53 @@
+<!DOCTYPE HTML>  
+<html>  
+  
+<head>  
+    <title>  
+ايجاد مضروب اي رقم 
+    </title> 
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+</head>  
+  
+<body style = "text-align:center;">  
+      
+    <h1 style = "color:green;" >  
+        factorial Number  
+		<h3 style = "color:green;">مضروب العدد</h3>
+    </h1> 
+      
+    <p id = "GFG_UP" style = 
+        "font-size: 15px; font-weight: bold;"> 
+    </p> 
+          
+    <button onclick = "GFG_Fun()"> 
+	<b>
+اضغط لايجاد المضروب
+<b>
+    </button> 
+      
+    <p id = "GFG_DOWN" style = "color:green; font-size: 20px; font-weight: bold;"> 
+    </p> 
+          
+    <script> 
+        var up = document.getElementById('GFG_UP');  
+        var down = document.getElementById('GFG_DOWN');  
+        var n = prompt("ادخل الرقم المراد ايجاد مضروبه"); 
+          
+        up.innerHTML = "تم ادخال الرقم " + n; 
+          
+        function Factorial(n) { 
+            var ans=1; 
+              
+            for (var i = 2; i <= n; i++) 
+                ans = ans * i; 
+            return ans; 
+        } 
+          
+        function GFG_Fun() {  
+            down.innerHTML = Factorial(n); 
+        }  
+    </script>  
+	<h2 style = "color:red; font-size: 20px; font-weight: bold;"> copyright &copy; 2020 <sub>abdellateef</sub>A.S<sup>Sanosse</sup> </h2>
+</body>  
+  
+</html>
